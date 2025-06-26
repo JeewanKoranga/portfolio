@@ -109,6 +109,115 @@
     </div>
 </section>
 
+<section class="services" id="services">
+  <h2 class="section-title">What <span>I Offer</span></h2>
+  <p class="section-subtitle">Comprehensive services to bring your ideas to life</p>
+
+  <div class="service-cards">
+    <!-- Web Development -->
+    <div class="service-card">
+      <div class="service-icon" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+        💻
+      </div>
+      <h3>Web Development</h3>
+      <p>I design and develop full-featured websites using HTML, CSS, JavaScript and frontend technologies.</p>
+    </div>
+
+    <!-- Responsive Design -->
+    <div class="service-card">
+      <div class="service-icon" style="background: linear-gradient(135deg, #da22ff 0%, #9733ee 100%);">
+        📱
+      </div>
+      <h3>Responsive Design</h3>
+      <p>Creating mobile-first, responsive web apps that work perfectly on all devices.</p>
+    </div>
+
+    <!-- Video Editing -->
+    <div class="service-card">
+      <div class="service-icon" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
+        🎬
+      </div>
+      <h3>Video Editing</h3>
+      <p>Crafting impactful edits using Adobe Premiere Pro and After Effects.</p>
+      <a href="#" class="visit-btn">Visit My Editing Site</a>
+    </div>
+
+    <!-- UI/UX Design -->
+    <div class="service-card">
+      <div class="service-icon" style="background: linear-gradient(135deg, #f857a6 0%, #ff5858 100%);">
+        🎨
+      </div>
+      <h3>UI/UX Design</h3>
+      <p>Designing intuitive and appealing user interfaces using modern design principles.</p>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <h2 class="section-title">Get In <span>Touch</span></h2>
+  <p class="section-subtitle">Let's work together to bring your ideas to life. Feel free to reach out!</p>
+
+  <div class="contact-container">
+    <!-- Contact Info -->
+    <div class="contact-info">
+      <h3>Let's Connect</h3>
+      <p>Open to new opportunities, projects, or just a friendly tech chat.</p>
+
+      <div class="contact-box">
+        <span class="contact-icon">📧</span>
+        <div>
+          <strong>Email</strong>
+          <p>jeewankoranga163@gmail.com</p>
+        </div>
+      </div>
+
+      <div class="contact-box">
+        <span class="contact-icon">🐙</span>
+        <div>
+          <strong>GitHub</strong>
+          <p>JeewanKoranga</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Form -->
+    <form class="contact-form" id="contact-form">
+      <h3>Send a Message</h3>
+
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="user_name" placeholder="Enter your name" required>
+
+      <label for="email">Your Email</label>
+      <input type="email" id="email" name="user_email" placeholder="Enter your email" required>
+
+      <label for="message">Your Message</label>
+      <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+
+      <button type="submit">📨 Send Message</button>
+    </form>
+  </div>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
+<script>
+  (function(){
+    emailjs.init("k12QML7hIEWA7pxD1lOoY"); // Replace with your EmailJS Public Key
+  })();
+
+  document.getElementById("contact-form").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    emailjs.sendForm("service_kclk8jp", "template_r7isgk9", this)
+      .then(function() {
+        alert("✅ Message sent successfully!");
+        document.getElementById("contact-form").reset();
+      }, function(error) {
+        alert("❌ Failed to send message. Please try again.");
+        console.error("EmailJS Error:", error);
+      });
+  });
+</script>
+
+
 
   <section id="contact" class="section">
     <h2>Contact</h2>
