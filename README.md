@@ -26,4 +26,4 @@ Video editing (Premiere Pro, After Effects)
 
 Club activities (Tech Club & Cultural Club)
 
-🔗 Live Preview | 📫 Contact me: [your email or LinkedIn]
+📫 Contact me:Jeewankoranga163@gmail.com
